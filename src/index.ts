@@ -10,6 +10,10 @@ app.get("/", (req: Request, res: Response) => {
   res.send("Bitespeed Identity Reconciliation API is running. Use POST /identify to interact with the service.");
 });
 
+app.get("/identify", (req: Request, res: Response) => {
+  res.status(405).json({ error: "Method Not Allowed. Please use POST request with JSON body." });
+});
+
 app.post("/identify", async (req: Request, res: Response) => {
   try {
     const { email, phoneNumber } = req.body;
