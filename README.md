@@ -37,6 +37,9 @@ This is a Node.js and TypeScript web service that exposes an `/identify` endpoin
 
 ## API Endpoint
 
+The service is deployed and accessible at:
+`https://identity-reconciliation-10fab38034a3.herokuapp.com/identify`
+
 ### `POST /identify`
 
 **Request Body:**
